@@ -2,6 +2,9 @@ FROM alpine:3.8
 
 LABEL maintainer "eric@daras.family"
 
+# Install updates
+RUN apk update
+
 # Base packages
 RUN apk add git curl python py-pip
 
